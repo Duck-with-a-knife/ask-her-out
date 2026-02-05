@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Her Out!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="bgDecor" aria-hidden="true"></div>
+   <div class="container">
+    <img src="asking.gif" alt="Cute animation" class="top-gif" />
+    <h1 id="mainQuestion">Will You Go Out With Me? 😊</h1>
+    <p id="subtitle" class="subtitle">I really like you ,would love to spend time together 💫</p>
+    <div class="btn-row">
+      <button id="yesBtn" class="btn yes">YES</button>
+      <button id="noBtn" class="btn no">NO</button>
+    </div>
+</div>
+
+<!-- hearts container -->
+<div id="hearts" aria-hidden="true"></div>
+
+<!-- Modal for love hug and sweet letter -->
+<div id="loveModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">×</button>
+    <img src="love huggif.gif" alt="Love hug" class="modal-gif" />
+    <h2 id="modalTitle">A Sweet Message</h2>
+    <div id="sweetLetter" class="sweet-letter">
+      <button class="envelope-btn" aria-label="Open images" aria-describedby="envelopeHint" title="Open images">📮</button>
+      <span id="envelopeHint" class="click-hint" aria-hidden="true">Click me</span>
+
+      <!-- envelope display (images will emerge here) -->
+      <div class="envelope-display" aria-hidden="true">
+        <div class="envelope-base" aria-hidden="true"></div>
+        <div class="envelope-photos" aria-hidden="true"></div>
+      </div>
+
+      <blockquote>
+        <p>Happy Valentine’s Day, my love.</p>
+        <p>Even though miles keep me from holding you today, my heart has never been closer to yours. I hope you feel how deeply you are loved, in every quiet moment and every smile you carry through the day. I may not be there beside you, but I am always with you, thinking of you, choosing you, loving you. From the bottom of my heart, now and always, it’s you.</p>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- Image modal (preview-only slots) -->
+<div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">×</button>
+    <h2 id="imageModalTitle">Our Memories</h2>
+    <p id="imageModalDesc" class="muted">Everything begins somewhere — and here is where our memories start. These are the moments we share that make us who we are.</p>
+
+    <div id="imageGrid" class="image-grid image-preview-grid" aria-live="polite"></div>
+
+    <div class="image-controls" style="text-align:center;margin-top:18px">
+      <button id="prevSetBtn" class="btn" disabled>Prev</button>
+      <button id="nextSetBtn" class="btn">Next</button>
+    </div>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
